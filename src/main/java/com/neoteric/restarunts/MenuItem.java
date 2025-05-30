@@ -1,8 +1,13 @@
 package com.neoteric.restarunts;
 
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Objects;
 
+@Getter
+@Setter
 public class MenuItem {
 
     private int id;
@@ -10,7 +15,6 @@ public class MenuItem {
     private double price;
     private boolean vegetarian;
 
-    public MenuItem() {}
 
     public MenuItem(int id, String name, double price, boolean vegetarian) {
         this.id = id;
@@ -18,21 +22,6 @@ public class MenuItem {
         this.price = price;
         this.vegetarian = vegetarian;
     }
-
-
-
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
-
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
-
-    public double getPrice() { return price; }
-    public void setPrice(double price) { this.price = price; }
-
-    public boolean isVegetarian() { return vegetarian; }
-    public void setVegetarian(boolean vegetarian) { this.vegetarian = vegetarian; }
-
 
     @Override
     public String toString() {

@@ -1,9 +1,13 @@
 package com.neoteric.balls;
 
 
+import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 
 @ToString
+@Setter
+@Getter
 public class Ball {
 
     private String color;
@@ -16,19 +20,4 @@ public class Ball {
         this.ball_number = ball_number;
     }
 
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public int getBall_number() {
-        return ball_number;
-    }
-
-    public void setBall_number(int ball_number) {
-        this.ball_number = ball_number;
-    }
 }

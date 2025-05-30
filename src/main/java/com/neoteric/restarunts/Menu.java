@@ -1,31 +1,27 @@
 package com.neoteric.restarunts;
 
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.List;
 import java.util.Objects;
 
+
+
+@Setter
+@Getter
 public class Menu {
 
     private int id;
     private String name;
     private List<MenuItem> items;
 
-    public Menu() {}
-
     public Menu(int id, String name, List<MenuItem> items) {
         this.id = id;
         this.name = name;
         this.items = items;
     }
-
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
-
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
-
-    public List<MenuItem> getItems() { return items; }
-    public void setItems(List<MenuItem> items) { this.items = items; }
 
     @Override
     public String toString() {

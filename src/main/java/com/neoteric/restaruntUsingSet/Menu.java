@@ -1,17 +1,20 @@
 package com.neoteric.restaruntUsingSet;
 
 
-import java.util.List;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Objects;
 import java.util.Set;
 
+
+@Getter
+@Setter
 public class Menu {
 
     private int id;
     private String name;
     private Set<MenuItem> items;
-
-    public Menu() {}
 
     public Menu(int id, String name, Set<MenuItem> items) {
         this.id = id;
@@ -19,14 +22,6 @@ public class Menu {
         this.items = items;
     }
 
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
-
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
-
-    public Set<MenuItem> getItems() { return items; }
-    public void setItems(Set<MenuItem> items) { this.items = items; }
 
     @Override
     public String toString() {
