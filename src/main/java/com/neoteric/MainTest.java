@@ -39,8 +39,7 @@ public class MainTest {
                         Collectors.averagingDouble(Employee::getSalary)
                 ));
 
-        avgSalaryByDept.forEach((deptName, avgSalary) ->
-                System.out.println("Average salary in " + deptName + ": ₹" + avgSalary));
+        System.out.println(avgSalaryByDept);
 
 
 
